@@ -1,17 +1,10 @@
-package ir.mhd.myapplication.ui.game
+package ir.mhd.unscramble.ui.game
 
-import android.text.Spannable
-import android.text.SpannableString
-import android.text.style.TtsSpan
 import android.util.Log
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.map
-import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 
 class GameViewModel : ViewModel() {
