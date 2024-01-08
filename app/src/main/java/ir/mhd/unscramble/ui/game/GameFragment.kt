@@ -1,4 +1,4 @@
-package ir.mhd.unscramble.ui.game
+package ir.mhd.myapplication.ui.game
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,8 +10,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import ir.mhd.unscramble.R
-import ir.mhd.unscramble.databinding.FragmentGameBinding
+import ir.mhd.myapplication.R
+import ir.mhd.myapplication.databinding.FragmentGameBinding
 import kotlinx.coroutines.launch
 
 class GameFragment : Fragment() {
