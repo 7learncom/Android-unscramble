@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "ir.mhd.myapplication"
+    namespace = "ir.mhd.unscramble"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "ir.mhd.myapplication"
+        applicationId = "ir.mhd.unscramble"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

@@ -1,4 +1,4 @@
-package ir.mhd.myapplication
+package ir.mhd.unscramble
 
 import org.junit.Test
 
