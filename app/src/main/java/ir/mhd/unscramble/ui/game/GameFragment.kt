@@ -78,20 +78,15 @@ class GameFragment : Fragment() {
 
         if (viewModel.isUserWordCorrect(playerWord)) {
             setErrorTextField(false)
-            if (!viewModel.nextWord()) {
-                showFinalScoreDialog()
-            }
+            viewModel.nextWord()
         } else {
             setErrorTextField(true)
         }
     }
 
     private fun onSkipWord() {
-        if (viewModel.nextWord()) {
-            setErrorTextField(false)
-        } else {
-            showFinalScoreDialog()
-        }
+        viewModel.nextWord()
+        setErrorTextField(false)
     }
 
     /*

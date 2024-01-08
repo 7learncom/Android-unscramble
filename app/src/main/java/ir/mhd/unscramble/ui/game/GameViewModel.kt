@@ -54,8 +54,8 @@ class GameViewModel : ViewModel() {
         _score.value = 0
         _currentWordCount.value = 0
         wordsList.clear()
-        getNextWord()
         _isGameOver.value = false
+        getNextWord()
     }
 
     private fun increaseScore() {
@@ -72,13 +72,11 @@ class GameViewModel : ViewModel() {
         return false
     }
 
-    fun nextWord(): Boolean {
-        return if (_currentWordCount.value < MAX_NO_OF_WORDS) {
+    fun nextWord() {
+        if (_currentWordCount.value < MAX_NO_OF_WORDS) {
             getNextWord()
-            true
         } else {
             _isGameOver.value = true
-            false
         }
     }
 }
